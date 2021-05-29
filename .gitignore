@@ -1,0 +1,8 @@
+# IDE settings
+.idea/
+
+# Dependences
+node_modules/
+
+# Git Hooks
+.husky/

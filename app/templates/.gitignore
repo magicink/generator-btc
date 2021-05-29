@@ -1,0 +1,9 @@
+# Artifacts
+dist/
+
+# Dependencies
+node_modules/
+
+# IDE Settings
+.idea/
+.vs/

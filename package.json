@@ -1,0 +1,41 @@
+{
+  "name": "generator-btc",
+  "version": "1.0.0",
+  "description": "A custom Yeoman generator",
+  "keywords": ["yeoman","generator"],
+  "license": "ISC",
+  "author": {
+    "name": "Brandon Tom",
+    "email": "magicink@gmail.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,md}\"",
+    "prepare": "npx husky install",
+    "postprepare": "npx rimraf .husky/pre-commit && npx husky add .husky/pre-commit \"npm run format && npm test\"",
+    "test": "jest"
+  },
+  "prettier": {
+    "arrowParens": "avoid",
+    "bracketSpacing": true,
+    "jsxSingleQuote": true,
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none"
+  },
+  "dependencies": {
+    "yeoman-generator": "5.3.0"
+  },
+  "devDependencies": {
+    "husky": "^6.0.0",
+    "jest": "^27.0.1",
+    "prettier": "^2.3.0",
+    "yeoman-test": "^6.1.0"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "<rootDir>/app/templates/src"
+    ]
+  }
+}
