@@ -68,7 +68,6 @@ module.exports = class extends Generator {
       '@testing-library/jest-dom',
       'babel-jest',
       'core-js',
-      'husky',
       'identity-obj-proxy',
       'jest',
       'node-sass',
